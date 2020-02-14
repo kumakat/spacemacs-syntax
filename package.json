@@ -1,15 +1,19 @@
 {
-  "name": "spacemacs-syntax",
-  "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
-  "keywords": [
-    "syntax",
-    "theme"
-  ],
-  "repository": "https://github.com/atom/spacemacs-syntax",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  }
+    "name": "spacemacs-syntax",
+    "theme": "syntax",
+    "version": "0.0.0",
+    "description": "Spacemacs themes for Atom.",
+    "keywords": [
+        "syntax",
+        "theme",
+        "spacemacs",
+        "dark",
+        "light"
+    ],
+    "repository": "https://github.com/kumakat/spacemacs-syntax",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "main": "./lib/main"
 }

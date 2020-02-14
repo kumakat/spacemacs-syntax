@@ -1,5 +1,14 @@
-# spacemacs-syntax theme
+# Spacemacs Theme for Atom (Dark & Light)
 
-A short description of your theme.
+This is an adaption of Spacemacs theme for Atom.
+The original theme is a wonderful work [nashamri/spacemacs-theme](https://github.com/nashamri/spacemacs-theme).
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+## Screenshots
+
+With [Atom Material UI](https://github.com/atom-material/atom-material-ui).
+
+![screenshot dark](./img/dark.png)
+
+![screenshot light](./img/light.png)
+
+You can get closer to the original atmosphere by setting primary color as #5d4d7a for Dark theme, and  #d3d3e7 for Light theme.
