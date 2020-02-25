@@ -1,4 +1,5 @@
 fs = require 'fs'
+{CompositeDisposable} = require 'atom'
 
 module.exports =
     config:
@@ -12,11 +13,15 @@ module.exports =
             default: 'Dark'
 
     activate: (state) ->
-        self = atom.packages.getLoadedPackage('spacemacs-syntax')
+        @disposables = new CompositeDisposable
+        self = atom.packages.getLoadedPackage(require('../package.json').name)
 
-        atom.config.onDidChange 'spacemacs-syntax.theme', ({newValue, oldValue}) ->
+        @disposables.add atom.config.onDidChange "#{self.name}.theme", ({newValue, oldValue}) ->
             themeData = '@import "themes/' + newValue.toLowerCase() + '";'
 
-            fs.writeFile self.path + '/styles/theme.less', themeData, (err) ->
+            fs.writeFile "#{self.path}/styles/theme.less", themeData, (err) ->
                 if !err
                     atom.themes.activateThemes()
+
+    deactivate: ->
+        @disposables.dispose()
