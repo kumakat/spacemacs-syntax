@@ -1,0 +1,68 @@
+.syntax--gfm {
+    &.syntax--markup {
+        -webkit-font-smoothing: auto;
+
+        &.syntax--heading {
+            &.syntax--heading-1 {
+                color: @head1;
+                font-size: 130%;
+                font-weight: bold;
+            }
+
+            &.syntax--heading-2 {
+                color: @head2;
+                font-size: 120%;
+                font-weight: bold;
+            }
+
+            &.syntax--heading-3 {
+                color: @head3;
+                font-size: 110%;
+            }
+
+            &.syntax--heading-4 {
+                color: @head4;
+            }
+
+            &.syntax--heading-5 {
+                color: @head1;
+            }
+
+            &.syntax--heading-6 {
+                color: @head2;
+            }
+        }
+
+        &.syntax--code,
+        &.syntax--raw {
+            .syntax--support {
+                color: @base-dim;
+            }
+        }
+    }
+
+    &.syntax--table {
+        background-color: @comment-bg;
+    }
+
+    .syntax--comment.syntax--hr,
+    .syntax--heading.syntax--marker,
+    .syntax--link,
+    .syntax--link .syntax--punctuation,
+    .syntax--support.syntax--quote,
+    .syntax--variable {
+        color: @base-dim;
+    }
+
+    .syntax--link {
+        .syntax--entity {
+            color: @comment;
+            text-decoration: underline;
+        }
+
+        .syntax--underline.syntax--link {
+            color: @str;
+            text-decoration: none;
+        }
+    }
+}
