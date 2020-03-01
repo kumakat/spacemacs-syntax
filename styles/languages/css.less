@@ -1,0 +1,48 @@
+.syntax--css {
+    .syntax--keyword {
+        &.syntax--other {
+            font-weight: normal;
+
+            &.syntax--unit {
+                color: @syntax-text-color;
+            }
+
+            &.syntax--parent-reference {
+                color: @func;
+            }
+        }
+    }
+
+    .syntax--entity {
+        &.syntax--name.syntax--tag {
+            color: @func;
+            font-weight: bold;
+        }
+
+        &.syntax--other.syntax--attribute-name {
+            font-weight: bold;
+        }
+    }
+
+    .syntax--meta {
+        &.syntax--function {
+            font-weight: normal;
+        }
+    }
+
+    &.syntax--property-name {
+        color: @keyword;
+        font-weight: bold;
+    }
+
+    .syntax--variable {
+        &.syntax--other {
+            color: @var;
+        }
+    }
+
+    .syntax--constant.syntax--other,
+    .syntax--punctuation.syntax--constant {
+        color: @syntax-text-color;
+    }
+}
