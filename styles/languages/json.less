@@ -1,0 +1,14 @@
+.syntax--json {
+    .syntax--structure.syntax--dictionary {
+        &.syntax--key .syntax--string,
+        .syntax--string.syntax--key {
+            color: @keyword;
+            font-weight: bold;
+
+            .syntax--punctuation.syntax--definition {
+                color: @keyword;
+                font-weight: bold;
+            }
+        }
+    }
+}
