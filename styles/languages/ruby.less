@@ -1,0 +1,17 @@
+.syntax--ruby {
+    .syntax--constant {
+        &.syntax--other.syntax--symbol {
+            color: @type;
+        }
+    }
+
+    .syntax--punctuation {
+        &.syntax--definition.syntax--constant {
+            color: @type;
+        }
+
+        &.syntax--section.syntax--embedded {
+            color: @func;
+        }
+    }
+}
