@@ -138,10 +138,10 @@
             color: @comment;
         }
 
-        &.syntax--string,
-        &.syntax--regexp,
         &.syntax--embedded,
-        &.syntax--interpolation {
+        &.syntax--interpolation,
+        &.syntax--regexp,
+        &.syntax--string {
             color: @str;
             font-weight: normal;
         }
@@ -161,14 +161,15 @@
             color: @syntax-text-color;
         }
 
-        &.syntax--entity,
-        &.syntax--directive {
+        &.syntax--directive,
+        &.syntax--entity {
             color: @func;
         }
     }
 
     &.syntax--separator {
         color: @syntax-text-color;
+        font-weight: normal;
     }
 }
 
@@ -213,8 +214,8 @@
             }
         }
 
-        &.syntax--type,
-        &.syntax--class {
+        &.syntax--class,
+        &.syntax--type {
             color: @type;
             font-weight: bold;
         }
@@ -253,8 +254,13 @@
 
     &.syntax--function {
         font-weight: bold;
+    }
 
+    &.syntax--function,
+    &.syntax--function-call {
+        &.syntax--arguments,
         &.syntax--method {
+            color: @syntax-text-color;
             font-weight: normal;
         }
     }

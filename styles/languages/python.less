@@ -1,0 +1,48 @@
+.syntax--python {
+    .syntax--storage {
+        &.syntax--type.syntax--string {
+            color: @syntax-text-color;
+            font-weight: normal;
+        }
+    }
+
+    .syntax--punctuation {
+        &.syntax--definition,
+        &.syntax--section {
+            &.syntax--class,
+            &.syntax--function {
+                color: @syntax-text-color;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .syntax--definition.syntax--decorator,
+    .syntax--function.syntax--decorator {
+        color: @type;
+        font-weight: bold;
+
+        &.syntax--arguments {
+            color: @syntax-text-color;
+            font-weight: normal;
+        }
+    }
+
+    .syntax--variable {
+        &.syntax--parameter {
+            color: @syntax-text-color;
+            font-weight: normal;
+
+            &.syntax--special {
+                color: @keyword;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .syntax--support {
+        &.syntax--variable.syntax--magic {
+            color: @keyword;
+        }
+    }
+}
