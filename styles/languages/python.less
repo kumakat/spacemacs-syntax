@@ -40,9 +40,26 @@
         }
     }
 
+    .syntax--meta {
+        &.syntax--fstring {
+            color: @str;
+        }
+    }
+
+    .syntax--meta {
+        &.syntax--function-call {
+            &.syntax--arguments {
+                color: @syntax-text-color;
+                font-weight: normal;
+            }
+        }
+    }
+
     .syntax--support {
-        &.syntax--variable.syntax--magic {
+        &.syntax--type,
+        &.syntax--variable {
             color: @keyword;
+            font-weight: normal;
         }
     }
 }
