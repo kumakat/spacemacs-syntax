@@ -2,7 +2,7 @@
     "name": "spacemacs-syntax",
     "theme": "syntax",
     "version": "0.1.0",
-    "description": "Spacemacs themes for Atom.",
+    "description": "Spacemacs theme for Atom.",
     "keywords": [
         "syntax",
         "theme",
@@ -11,7 +11,7 @@
         "light"
     ],
     "repository": "https://github.com/kumakat/spacemacs-syntax",
-    "license": "MIT",
+    "license": "GPL-3.0",
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
     },

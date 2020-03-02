@@ -1,5 +1,9 @@
 # Spacemacs Theme for Atom (Dark & Light)
 
+![downloads](https://img.shields.io/apm/dm/spacemacs-syntax?style=flat-square)
+![version](https://img.shields.io/apm/v/spacemacs-syntax?style=flat-square)
+![license](https://img.shields.io/apm/l/spacemacs-syntax?style=flat-square)
+
 This is an adaption of Spacemacs theme for Atom.
 The original theme is a wonderful work [nashamri/spacemacs-theme](https://github.com/nashamri/spacemacs-theme).
 
